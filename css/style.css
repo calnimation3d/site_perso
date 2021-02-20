@@ -18,78 +18,185 @@
     font-family: "font_title";
     src: url("../fichiers/Moria.TTF");
 }
-.container
+div.container
 {
-    width: 1200px;
+    width: 95%;
     margin: auto;
-    margin-top: -8px;
 }
 header
 {
-    width: 100%;
     background-color: #081286;
+    padding: 10px 0px 1px 0px;
+    border: solid 2px #000;
     border-radius: 25% 25% 0% 0%;
-    padding: 1px 0px 0px 0px;
 }
 header h1
 {
     text-align: center;
-    text-decoration: underline overline 3px #ff0;
-    font-family: "font_title";
-    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
     color: #fff;
+    text-decoration: overline underline #ff0;
 }
-header nav ul
-{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    margin-top: -10px;
-    padding-bottom: 10px;
-}
-header nav ul li a
-{
-    display: block;
-    width: 50px;
-    height: 50px;
-}
-header nav ul li:nth-child(1)
-{
-    background-image: url("../fichiers/home.png");
-}
-header nav ul li:nth-child(2)
-{
-    background-image: url("../fichiers/camion.png");
-}header nav ul li:nth-child(3)
-{
-    background-image: url("../fichiers/codeur.png");
-}
-header nav ul li:nth-child(4)
-{
-    background-image: url("../fichiers/tete.png");
-}
-header nav ul li:nth-child(5)
-{
-    background-image: url("../fichiers/recettes.png");
-}header nav ul li:nth-child(6)
-{
-    background-image: url("../fichiers/photos.png");
-}
-header nav ul li:nth-child(7)
-{
-    background-image: url("../fichiers/passwords.png");
-}
+
 section
 {
-    background-color: #081286;
-    border: solid 3px #000;
-    margin-top: -17px;
+    display: flex;
+    width: 100%;
 }
-section h2
+div.navigation
 {
-    font-family: "font_subtitle";
-    font-size: 30px;
-    color: #812;
-    text-decoration: underline 3px;
+    width: 30px;
+}
+div.navigation ul
+{
+    list-style: none;
+    display: grid;
+    margin-left: -35px;
+}
+div.navigation ul li a
+{
+    float: right;
+    width: 25px;
+    height: 30px;
+}
+div.navigation ul li:nth-child(1)
+{
+    background-image: url("../fichiers/home_mobile.png");
+    background-repeat: no-repeat;
+}
+div.navigation ul li:nth-child(2)
+{
+    background-image: url("../fichiers/camion_mobile.png");
+    background-repeat: no-repeat;
+}
+div.navigation ul li:nth-child(3)
+{
+    background-image: url("../fichiers/codeur_mobile.png");
+    background-repeat: no-repeat;
+}
+div.navigation ul li:nth-child(4)
+{
+    background-image: url("../fichiers/tete_mobile.png");
+    background-repeat: no-repeat;
+}
+div.navigation ul li:nth-child(5)
+{
+    background-image: url("../fichiers/recettes_mobile.png");
+    background-repeat: no-repeat;
+}
+div.navigation ul li:nth-child(6)
+{
+    background-image: url("../fichiers/photos_mobile.png");
+    background-repeat: no-repeat;
+}
+
+div.content
+{
+    width: 85%;
+    margin: 0px auto 0px auto;
+}
+div.content h2
+{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #081286;
+    text-decoration: overline underline #000;
+}
+div.content h2 img
+{
+    vertical-align: text-bottom;
+}
+
+footer .credit
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    text-align: center;
+}
+footer .author
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+@media only screen and (min-width: 768px)
+{
+    div.container
+    {
+        width: 75%;
+    }
+    header
+    {
+        border: solid 5px #000;
+    }
+    header h1
+    {
+        text-align: center;
+        font-family: "font_title";
+        font-size: 30px;
+        text-decoration: overline underline 3px #ff0;
+    }
+    header h2
+    {
+        font-size: 30px;
+        font-family: "font_subtitle";
+    }
+    div.navigation
+    {
+        width: 50px;
+    }
+    div.navigation ul li a
+    {
+        width: 50px;
+        height: 60px;
+    }
+    div.navigation ul li:nth-child(1)
+    {
+        background-image: url("../fichiers/home.png");
+        background-repeat: no-repeat;
+    }
+    div.navigation ul li:nth-child(2)
+    {
+        background-image: url("../fichiers/camion.png");
+        background-repeat: no-repeat;
+    }
+    div.navigation ul li:nth-child(3)
+    {
+        background-image: url("../fichiers/codeur.png");
+        background-repeat: no-repeat;
+    }
+    div.navigation ul li:nth-child(4)
+    {
+        background-image: url("../fichiers/tete.png");
+        background-repeat: no-repeat;
+    }
+    div.navigation ul li:nth-child(5)
+    {
+        background-image: url("../fichiers/recettes.png");
+        background-repeat: no-repeat;
+    }
+    div.navigation ul li:nth-child(6)
+    {
+        background-image: url("../fichiers/photos.png");
+        background-repeat: no-repeat;
+    }
+    div.content h2
+    {
+        font-family: "font_subtitle";
+        font-size: 30px;
+    }
+
+    footer .credit
+    {
+        font-family: "font_link";
+        font-size: 15px;
+    }
+    footer .author
+    {
+        font-family: "font_text";
+        font-size: 17px;
+    }
 }
