@@ -1,0 +1,95 @@
+@font-face 
+{
+    font-family: "font_link";
+    src: url("../fichiers/giro.otf");
+}
+@font-face 
+{
+    font-family: "font_subtitle";
+    src: url("../fichiers/old_typer.ttf");
+}
+@font-face
+{
+    font-family: "font_text";
+    src: url("../fichiers/old_roman.ttf");
+}
+@font-face
+{
+    font-family: "font_title";
+    src: url("../fichiers/Moria.TTF");
+}
+.container
+{
+    width: 1200px;
+    margin: auto;
+    margin-top: -8px;
+}
+header
+{
+    width: 100%;
+    background-color: #081286;
+    border-radius: 25% 25% 0% 0%;
+    padding: 1px 0px 0px 0px;
+}
+header h1
+{
+    text-align: center;
+    text-decoration: underline overline 3px #ff0;
+    font-family: "font_title";
+    font-size: 30px;
+    color: #fff;
+}
+header nav ul
+{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+header nav ul li a
+{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+header nav ul li:nth-child(1)
+{
+    background-image: url("../fichiers/home.png");
+}
+header nav ul li:nth-child(2)
+{
+    background-image: url("../fichiers/camion.png");
+}header nav ul li:nth-child(3)
+{
+    background-image: url("../fichiers/codeur.png");
+}
+header nav ul li:nth-child(4)
+{
+    background-image: url("../fichiers/tete.png");
+}
+header nav ul li:nth-child(5)
+{
+    background-image: url("../fichiers/recettes.png");
+}header nav ul li:nth-child(6)
+{
+    background-image: url("../fichiers/photos.png");
+}
+header nav ul li:nth-child(7)
+{
+    background-image: url("../fichiers/passwords.png");
+}
+section
+{
+    background-color: #081286;
+    border: solid 3px #000;
+    margin-top: -17px;
+}
+section h2
+{
+    font-family: "font_subtitle";
+    font-size: 30px;
+    color: #812;
+    text-decoration: underline 3px;
+    text-align: center;
+}

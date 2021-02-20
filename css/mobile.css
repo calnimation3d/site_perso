@@ -1,0 +1,43 @@
+.container
+{
+    width: 100%;
+}
+header h1
+{
+    font-size: 20px;
+}
+header nav ul li a
+{
+    width: 25px;
+    height: 25px;
+}
+header nav ul li:nth-child(1)
+{
+    background-image: url("../fichiers/home_mobile.png");
+}
+header nav ul li:nth-child(2)
+{
+    background-image: url("../fichiers/camion_mobile.png");
+}header nav ul li:nth-child(3)
+{
+    background-image: url("../fichiers/codeur_mobile.png");
+}
+header nav ul li:nth-child(4)
+{
+    background-image: url("../fichiers/tete_mobile.png");
+}
+header nav ul li:nth-child(5)
+{
+    background-image: url("../fichiers/recettes_mobile.png");
+}header nav ul li:nth-child(6)
+{
+    background-image: url("../fichiers/photos_mobile.png");
+}
+header nav ul li:nth-child(7)
+{
+    background-image: url("../fichiers/passwords_mobile.png");
+}
+section h2
+{
+    font-size: 20px;
+}
