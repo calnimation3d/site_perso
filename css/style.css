@@ -1,3 +1,4 @@
+/*  Mes polices  */
 @font-face 
 {
     font-family: "font_link";
@@ -18,185 +19,141 @@
     font-family: "font_title";
     src: url("../fichiers/Moria.TTF");
 }
-div.container
+/*  Attributions des polices  */
+a
 {
-    width: 95%;
-    margin: auto;
+    font-family: "font_link";
+    text-decoration: none;
+    color: #081286;
 }
-header
+h2
+{
+    font-family: "font_subtitle";
+    font-size: 25px;
+}
+p
+{
+    font-family: "font_text";
+    font-size: 15px;
+}
+h1
+{
+    font-family: "font_title";
+    font-size: 30px;
+}
+/*  Pour ordinateurs  */
+body
 {
     background-color: #081286;
-    padding: 10px 0px 1px 0px;
-    border: solid 2px #000;
-    border-radius: 25% 25% 0% 0%;
+    margin-top: 0px;
 }
-header h1
+div.container
 {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: #fff;
-    text-decoration: overline underline #ff0;
+    width: 1200px;
+    margin: auto;
+    background-color: #ccc;
 }
-
-section
+header, section, footer
+{
+    border-bottom: double 3px #000;
+    padding: 10px 30px;
+}
+div.title h1
+{
+    color: #081286;
+    text-decoration: overline underline 3px;
+    text-align: center;
+}
+header ul
 {
     display: flex;
-    width: 100%;
+    justify-content: space-evenly;
 }
-div.navigation
-{
-    width: 30px;
-}
-div.navigation ul
+header ul li
 {
     list-style: none;
-    display: grid;
-    margin-left: -35px;
+    padding-top: 5px;
 }
-div.navigation ul li a
+header ul li a
 {
-    float: right;
-    width: 25px;
-    height: 30px;
+    padding: 5px 15px;
+    border: solid 2px #081286;
+    border-radius: 25px 0px 25px 0px;
+    color: #000;
 }
-div.navigation ul li:nth-child(1)
+header ul li a:hover
 {
-    background-image: url("../fichiers/home_mobile.png");
-    background-repeat: no-repeat;
+    border-radius:0px 25px 0px 25px;
 }
-div.navigation ul li:nth-child(2)
+div.subtitle h2
 {
-    background-image: url("../fichiers/camion_mobile.png");
-    background-repeat: no-repeat;
+    color: #a00;
+    text-align: center;
+    text-decoration: overline underline 2px ;
 }
-div.navigation ul li:nth-child(3)
+div.subtitle h2 img
 {
-    background-image: url("../fichiers/codeur_mobile.png");
-    background-repeat: no-repeat;
+    vertical-align: bottom;
 }
-div.navigation ul li:nth-child(4)
+div.subtitle h2 img.mobile
 {
-    background-image: url("../fichiers/tete_mobile.png");
-    background-repeat: no-repeat;
+    display: none;
 }
-div.navigation ul li:nth-child(5)
-{
-    background-image: url("../fichiers/recettes_mobile.png");
-    background-repeat: no-repeat;
-}
-div.navigation ul li:nth-child(6)
-{
-    background-image: url("../fichiers/photos_mobile.png");
-    background-repeat: no-repeat;
-}
-
-div.content
-{
-    width: 85%;
-    margin: 0px auto 0px auto;
-}
-div.content h2
+footer p
 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: #081286;
-    text-decoration: overline underline #000;
+    color: #000;
 }
-div.content h2 img
-{
-    vertical-align: text-bottom;
-}
-
-footer .credit
-{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    text-align: center;
-}
-footer .author
-{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    text-align: center;
-    text-decoration: underline;
-}
-@media only screen and (min-width: 768px)
+/*  Pour mobile  */
+@media only screen and (max-width: 1200px)
 {
     div.container
     {
-        width: 75%;
+        width: 95%;
+        margin: auto;
+        background-color: #ccc;
     }
-    header
+    header, section, footer
     {
-        border: solid 5px #000;
+        border-bottom: double 2px #000;
+        padding: 5px;
     }
-    header h1
+    div.title h1
     {
-        text-align: center;
-        font-family: "font_title";
-        font-size: 30px;
-        text-decoration: overline underline 3px #ff0;
-    }
-    header h2
-    {
-        font-size: 30px;
-        font-family: "font_subtitle";
-    }
-    div.navigation
-    {
-        width: 50px;
-    }
-    div.navigation ul li a
-    {
-        width: 50px;
-        height: 60px;
-    }
-    div.navigation ul li:nth-child(1)
-    {
-        background-image: url("../fichiers/home.png");
-        background-repeat: no-repeat;
-    }
-    div.navigation ul li:nth-child(2)
-    {
-        background-image: url("../fichiers/camion.png");
-        background-repeat: no-repeat;
-    }
-    div.navigation ul li:nth-child(3)
-    {
-        background-image: url("../fichiers/codeur.png");
-        background-repeat: no-repeat;
-    }
-    div.navigation ul li:nth-child(4)
-    {
-        background-image: url("../fichiers/tete.png");
-        background-repeat: no-repeat;
-    }
-    div.navigation ul li:nth-child(5)
-    {
-        background-image: url("../fichiers/recettes.png");
-        background-repeat: no-repeat;
-    }
-    div.navigation ul li:nth-child(6)
-    {
-        background-image: url("../fichiers/photos.png");
-        background-repeat: no-repeat;
-    }
-    div.content h2
-    {
-        font-family: "font_subtitle";
-        font-size: 30px;
-    }
-
-    footer .credit
-    {
-        font-family: "font_link";
         font-size: 15px;
     }
-    footer .author
+    header ul
     {
-        font-family: "font_text";
-        font-size: 17px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    header ul
+    {
+        margin-left: -40px;
+    }
+    header ul li a
+    {
+        padding: 2px 7px;
+        border: solid 2px #081286;
+        border-radius: 5px;
+        background-color: #555;
+        color: #fff;
+        font-size: 12px;
+    }
+    div.subtitle h2
+    {
+        font-size: 15px;
+    }
+    div.subtitle h2 img.mobile
+    {
+        display: inline-block;
+    }
+    div.subtitle h2 img.web
+    {
+        display: none;
+    }
+    footer p, footer a
+    {
+        font-size: 10px;
     }
 }
